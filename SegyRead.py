@@ -33,7 +33,7 @@ def ReadOneTrace(fileName, trace, sampleNum):
         fp.seek(sampleNum*4,1)
     fp.seek(240,1)
     data = fp.read(sampleNum*4)
-    value = [];
+    value = []
     for i in range(sampleNum):
         index = i*4
         indexEnd = (i+1)*4
